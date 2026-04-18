@@ -1,0 +1,41 @@
+type: object
+required:
+  - name
+  - scope
+  - status
+properties:
+  name:
+    type: string
+  scope:
+    type: string
+    enum: [personal, project, team, organization]
+  owner:
+    type: string
+  status:
+    type: string
+  goals:
+    type: array
+    items:
+      type: string
+  background:
+    type: array
+    items:
+      type: string
+  current_status:
+    type: array
+    items:
+      type: string
+  resources:
+    type: object
+  decisions:
+    type: array
+    items:
+      type: string
+  risks:
+    type: array
+    items:
+      type: string
+  next_actions:
+    type: array
+    items:
+      type: string

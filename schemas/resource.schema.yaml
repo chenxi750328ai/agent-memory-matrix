@@ -1,0 +1,40 @@
+type: object
+required:
+  - name
+  - type
+  - scope
+  - status
+properties:
+  name:
+    type: string
+  type:
+    type: string
+  scope:
+    type: string
+    enum: [personal, project, team, organization]
+  owner:
+    type: string
+  status:
+    type: string
+  description:
+    type: array
+    items:
+      type: string
+  capabilities:
+    type: array
+    items:
+      type: string
+  constraints:
+    type: array
+    items:
+      type: string
+  linked_work_units:
+    type: object
+  usage_notes:
+    type: array
+    items:
+      type: string
+  maintenance_notes:
+    type: array
+    items:
+      type: string

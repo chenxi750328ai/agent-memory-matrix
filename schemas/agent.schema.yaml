@@ -1,0 +1,28 @@
+type: object
+required:
+  - name
+  - role
+  - scope
+  - status
+properties:
+  name:
+    type: string
+  role:
+    type: string
+  scope:
+    type: string
+    enum: [personal, project, team, organization]
+  status:
+    type: string
+  responsibilities:
+    type: array
+    items:
+      type: string
+  recovery_requirements:
+    type: array
+    items:
+      type: string
+  active_projects:
+    type: array
+    items:
+      type: string
